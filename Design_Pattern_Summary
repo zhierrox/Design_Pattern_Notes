@@ -1,0 +1,31 @@
+1， 简单工厂（Simple Factory）：：工厂完成所有判断逻辑，产品自己实现创建方法
+2， 工厂方法（Factory Method）：：一类产品对应一个工厂， 封装了产品内部关系（或型号之间关系）
+3， 抽象工厂（Abstract Factory）：：将多个工厂方法获得的产品组成产品族， 封装各类产品之间的关系例如（一个店铺卖美的空调， 海尔冰箱， 另一个店铺卖格力空调， 美的冰箱）
+4， 建造者（Builder）：：统一组合
+5， 原型（Prototype）：：使用cloneable， clone， super.clone()
+6， 单例（Singleton）：：类名.getInstance()
+7， 适配器（Adapter）：：封装API
+8， 桥接（Bridge）：：没有中间的桥， 只是相互引用
+9， 组合（Composite）：：递归, 子类添加父类
+10，装饰者（Decorator）：：decorator 的函数把里层函数全部覆盖
+11，外观（Facade）：：一对多， 处理组合， builder模式是处理创建
+12，享元（Flyweight）：：理解为"轻量"， 共享，类似于cache， 用hashmap
+13,代理（Proxy）：：代理要实现client的接口， decorator是还要添加新的东西
+14，职责链（Chain of Responsibility）：：类似try...throw...catch, 本质就是一个链表
+15，命令（Command）：：Facade重点在子系统， Command重点在封装， 本质是controller + command + item, 想到电视遥控器
+16，解释器（Interpreter）：：字符串变表达式， 每个元素都是一个结点， 记住calculator例子， 解释器本质是递归
+17，迭代器（Iterator）：：迭代器模式本质就是遍历任何元素
+18，中介者（Mediator）：：每个对象只与中介交流, 中介负责转发
+19，备忘录（Memento）：：对象的属性值保存到Memento, Memento保存到"负责人"对象
+20，观察者（Observer）：：订阅(观察者)-发布（被观察对象，里面包含Observers列表）, notify（）调用观察者的update()
+21，状态（State）：：一个状态一个类, 状态类里实现状态转换, 画状态图
+22，策略（Strategy）：：类似状态模式， 但偏向引起外部变化
+23，模板方法（Template Method）：：用一个模板method， 控制调用流程， 钩子（hook）就是一个布尔判断
+24，访问者（Visitor）：：数据accept(其他对象)， 然后， 其他对象visit(数据), 最后拼接结果； 分解数据，合拢结果， 有点Map/Reduce的意思
+
+
+
+排序（sort）：：排序的核心就是两个元素比较； 固定一个元素是常用方法
+	选择排序元素移动少， 冒泡移动多
+
+main class用static：：静态方法不能重写
